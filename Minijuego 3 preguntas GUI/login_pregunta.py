@@ -40,7 +40,7 @@ def mostrar_pregunta1(nombre_jugador):
 
     def responder(eleccion):
         if eleccion == respuesta_correcta:
-            cursor.execute("UPDATE jugadores SET puntuacion = puntuacion + 10 WHERE nombre = ?", (nombre_jugador,))
+            cursor.execute("UPDATE jugadores SET puntuacion = puntuacion + 100 WHERE nombre = ?", (nombre_jugador,))
             conexion.commit()
         ventana.destroy()
         mostrar_pregunta2(nombre_jugador)
