@@ -29,7 +29,7 @@ def mostrar_pregunta1(nombre_jugador):
     label_fondo.place(x=0, y=0, relwidth=1, relheight=1)
     ventana.fondo = fondo  # guardar referencia
 
-    pregunta = "¿Cuando empezo la Segunda Guerra Mundial?"
+    pregunta = "¿Cuando empezo la Segunda Guerra Mundial? (deberias saberlo)"
     opciones = {
         "A": "1945",
         "B": "1935",
