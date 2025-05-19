@@ -16,7 +16,7 @@ cursor.execute('''
 ''')
 conexion.commit()
 
-
+#Esta es la primera pregunta
 def mostrar_pregunta1(nombre_jugador):
     ventana = tk.Tk()
     ventana.title("Pregunta 1")
@@ -37,7 +37,7 @@ def mostrar_pregunta1(nombre_jugador):
         "D": "1914"
     }
     respuesta_correcta = "C"
-
+    #Recojo la respuesta del usuario
     def responder(eleccion):
         if eleccion == respuesta_correcta:
             cursor.execute("UPDATE jugadores SET puntuacion = puntuacion + 100 WHERE nombre = ?", (nombre_jugador,))
