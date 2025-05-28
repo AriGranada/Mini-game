@@ -7,6 +7,7 @@ import sqlite3
 conexion = sqlite3.connect("jugadores.db")
 cursor = conexion.cursor()
 
+#Ejecución del cursor para la creación de la tabla y el commit
 cursor.execute('''
     CREATE TABLE IF NOT EXISTS jugadores (
         id INTEGER PRIMARY KEY AUTOINCREMENT,
@@ -16,7 +17,7 @@ cursor.execute('''
 ''')
 conexion.commit()
 
-
+# Clase pregunta1
 def mostrar_pregunta1(nombre_jugador):
     ventana = tk.Tk()
     ventana.title("Pregunta 1")
